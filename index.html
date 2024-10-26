@@ -489,7 +489,11 @@
       filterList.init();
     });	
 
-    new WOW({ mobile:false }).init();
+    new WOW().init();
+
+    if ($(window).width() <= 991){ 
+      $(".wow").removeClass("wow");
+    }
   </script>
   </body>
 </html>
