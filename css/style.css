@@ -470,6 +470,15 @@ h2 {
   .copyright {
     border-top: 0;
   }
+
+  .image-one {
+    width: 70%;
+    margin-left: -12px;
+  }
+  .about-image-block .image-two {
+    top: 25%;
+    width: 70%;
+  }
 }
 @media (max-width: 575.98px) {
   .gallery-tab ul li {
