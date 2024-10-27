@@ -427,7 +427,8 @@ h2 {
   }
 
   .full-screen {
-    height: 65vh !important;
+    height: auto !important;
+    padding: 60px 0 45px;
   }
 }
 @media (max-width: 575.98px) {
@@ -463,7 +464,7 @@ h2 {
   z-index: 10;
 }
 
-.banner-slider { margin-top: 4rem; position: relative; z-index: 10;}
+.banner-slider { position: relative; z-index: 10;}
 .banner-slider .owl-nav { display: none;}
 .banner-slider .owl-dots { margin-top: 25px;}
 

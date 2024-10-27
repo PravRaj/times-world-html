@@ -28,6 +28,37 @@
 
   <body>
 
+  <nav class="navbar navbar-expand-md bg-white d-block d-sm-none">
+    <div class="container">
+      <a class="navbar-brand" href="#">LOGO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Promotions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+
   <header class="full-screen">
 
     <div class="container-fluid custom-menu">
@@ -43,37 +74,6 @@
           </ul>
       </div>
     </div>
-
-    <nav class="navbar navbar-expand-md bg-white d-block d-sm-none">
-      <div class="container">
-        <a class="navbar-brand" href="#">LOGO</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Promotions</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
     <div class="banner-slider">
       <div class="owl-carousel owl-theme">
@@ -453,8 +453,7 @@
         }
     });
 
-    $('.slider-container .owl-carousel').owlCarousel({
-    stagePadding: 80,  
+    $('.slider-container .owl-carousel').owlCarousel({ 
     autoplay: false,
     smartSpeed: 1000,
     loop: true,
@@ -474,7 +473,8 @@
             1000:{
                 items:2,
                 nav:true,
-                loop:false
+                stagePadding: 150,
+                loop: false
             }
         }
     });
